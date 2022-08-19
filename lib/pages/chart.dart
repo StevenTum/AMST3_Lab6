@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:firebase_database/firebase_database.dart';
+
 class Chart extends StatefulWidget {
   @override
   _ChartState createState() => _ChartState();

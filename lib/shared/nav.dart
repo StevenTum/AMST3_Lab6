@@ -7,16 +7,7 @@ import 'package:amst_g3/pages/chart.dart';
 class Nav extends StatefulWidget {
   @override
   _NavState createState() => _NavState();
-  Widget _llamarPagina(int paginaActual) {
-    switch (paginaActual) {
-      case 0:
-        return Data();
-      case 2:
-        return Chart();
-      default:
-          return HomePage();
-    }
-  }
+
 }
 
 class _NavState extends State<Nav> {
@@ -51,8 +42,13 @@ class _NavState extends State<Nav> {
               icon: Icon(Icons.bar_chart), label: 'Chart'),
         ]);
   }
+
   Widget _llamarPagina(int paginaActual) {
     switch (paginaActual) {
+      case 0:
+        return Data();
+      case 2:
+        return Chart();
       default:
         return HomePage();
     }
