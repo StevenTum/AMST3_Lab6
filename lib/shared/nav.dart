@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:amst_g3/pages/home_page.dart';
+import 'package:amst_g3/pages/data.dart';
+
 
 class Nav extends StatefulWidget {
   @override
   _NavState createState() => _NavState();
+  Widget _llamarPagina(int paginaActual) {
+    switch (paginaActual) {
+      case 0:
+        return Data();
+        default:
+          return HomePage();
+    }
+  }
 }
 
 class _NavState extends State<Nav> {
@@ -40,7 +51,7 @@ class _NavState extends State<Nav> {
   Widget _llamarPagina(int paginaActual) {
     switch (paginaActual) {
       default:
-        return Text("Hola Mundo");
+        return HomePage();
     }
   }
 }
