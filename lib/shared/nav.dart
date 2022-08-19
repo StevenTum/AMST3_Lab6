@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:amst_g3/pages/home_page.dart';
 import 'package:amst_g3/pages/data.dart';
+import 'package:amst_g3/pages/chart.dart';
 
 
 class Nav extends StatefulWidget {
@@ -10,7 +11,9 @@ class Nav extends StatefulWidget {
     switch (paginaActual) {
       case 0:
         return Data();
-        default:
+      case 2:
+        return Chart();
+      default:
           return HomePage();
     }
   }
